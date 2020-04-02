@@ -1,0 +1,13 @@
+import warnings
+import itertools
+import pandas as pd
+import numpy as np
+import statsmodels.api as sm
+import matplotlib.pyplot as plt
+plt.style.use('fivethirtyeight')
+
+import csv
+with open('demanda_csv.csv', 'r') as file:
+    reader = csv.reader(file)
+    for row in reader:
+        print(row)
