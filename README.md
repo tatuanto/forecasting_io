@@ -17,6 +17,7 @@ To do list:
 * Chequear si el costo de almacenar funciona para sistema =0/1
 * Calcular nivel de servicio (sale con las ventas no realizadas)
 * Exportar datos simulados
+* Montecarlear
 
 
 Previous steps:
