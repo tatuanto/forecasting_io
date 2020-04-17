@@ -17,4 +17,5 @@ Previous steps:
   * No trabajar los dias domingo
   * Crear las collections de pronosticoMedia y pronosticoDesvio
   * Armar la distribución normal que determine la demanda diaria
-  * hacer el inject de la demanda diaria a la llegadaClientes
+  * hacer el inject de la demanda diaria a la llegadaClientes (No lo uso)
+  * 1 producto= 1 agente --> crear llegadaClientes
