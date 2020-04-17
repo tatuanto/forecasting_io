@@ -6,7 +6,7 @@ Next step:
 
 To do list:
 * Agregar variabilidad del LT
-* Calcular costos (if en caso de sistema =0/1)
+* Chequear si el costo de almacenar funciona para sistema =0/1
 * Stock de seguridad (if en caso de sistema =0/1)
 * Calcular nivel de servicio (sale con las ventas no realizadas)
 * Exportar datos simulados
@@ -19,3 +19,4 @@ Previous steps:
   * Armar la distribución normal que determine la demanda diaria
   * hacer el inject de la demanda diaria a la llegadaClientes (No lo uso)
   * 1 producto= 1 agente --> crear llegadaClientes
+  * Calcular costos unitario, de almacen y por ordenar
