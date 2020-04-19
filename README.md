@@ -1,6 +1,6 @@
 # forecasting_io
 
-actualizado fri 19:56
+actualizado sat 21h
 
 Problemas que tenemos:
 * Podemos usar los datos del excel perfectamente excepto para calcular las variables que van definidas en la main (eoq, rop,ss). Ya probe sacarlas del main, pero no funciona porque el resto de las variables dejan de poder usarlas.
