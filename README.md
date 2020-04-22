@@ -1,21 +1,19 @@
 # forecasting_io
 
-actualizado sat 21h
+actualizado wed 
 
 Problemas que tenemos:
-* Podemos usar los datos del excel perfectamente excepto para calcular las variables que van definidas en la main (eoq, rop,ss). Ya probe sacarlas del main, pero no funciona porque el resto de las variables dejan de poder usarlas.
-Probé con pronostico.get(0) y tira un error en la simulación y probe pronostico.getFirst() pero no funciona porque es una ArrayList (y tiene que quedarse asi).
-* a arreglar si nos sobra tiempo: hacer que anylogic calcule el pronostico con table (ahora está como una distribución normal entre la demanda diaria que pronosticamos en el excel y el desvio del error)
+* Ver si se está trabajando los días domingo. Desde el  simulation y schedule parece que no, pero cuando empieza a simular toma el día domingo como el 10/03 y deberia ser el 8/3. Ver que en schedule esto lo hace bien.
+* Tenemos la demanda calculada en anylogic con una normal que tiene como desvio el desvio del error (es uno solo para todo el período). Sería ideal sacar valores de desvío de errores mensuales en excel, después los pasamos a AL (es fácil)
+
 
 Next step: 
-* arreglar todas las formulas (eoq;rop;etc) para que en vez de tomar el parámetro demandaMedia (que era un valor trivial) tome la media de nuestro pronóstico (que varía mes a mes)
-* El sistema hace mal la cuenta para calcular SS. A mi me da 112 y al sist 18.
-
+* Ver tema domingo
+* Ver desvíos de error
 
 
 To do list:
 * Chequear si el costo de almacenar funciona para sistema =0/1
-* Chequear la fórmula del stock de seguridad
 * Calcular nivel de servicio (sale con las ventas no realizadas)
 * Exportar datos simulados
 * Montecarlear
@@ -24,12 +22,12 @@ To do list:
 Previous steps:
   * cargar el excel 
   * No trabajar los dias domingo
-  * Crear las collections de pronosticoMedia y pronosticoDesvio
+  * Crear collections 
   * Armar la distribución normal que determine la demanda diaria
-  * hacer el inject de la demanda diaria a la llegadaClientes (No lo uso)
   * 1 producto= 1 agente --> crear llegadaClientes
   * Calcular costos unitario, de almacen y por ordenar
   * Agregar variabilidad del LT
-  * Agregué stock de seguridad
+  * Agregar stock de seguridad
   * hacer el calculo del stock de seguridad para p fijo.
-
+  * arreglar todas las formulas (eoq;rop;etc) para que en vez de tomar el parámetro demandaMedia (que era un valor trivial) tome la media de nuestro pronóstico (que varía mes a mes)
+  * Chequear la fórmula del stock de seguridad
