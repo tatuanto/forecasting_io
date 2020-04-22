@@ -3,18 +3,15 @@
 actualizado wed 
 
 Problemas que tenemos:
-* Ver si se está trabajando los días domingo. Desde el  simulation y schedule parece que no, pero cuando empieza a simular toma el día domingo como el 10/03 y deberia ser el 8/3. Ver que en schedule esto lo hace bien.
 * Tenemos la demanda calculada en anylogic con una normal que tiene como desvio el desvio del error (es uno solo para todo el período). Sería ideal sacar valores de desvío de errores mensuales en excel, después los pasamos a AL (es fácil)
 
 
-Next step: 
-* Ver tema domingo
-* Ver desvíos de error
-
 
 To do list:
-* Chequear si el costo de almacenar funciona para sistema =0/1
+* Ver rúbrica
+* Chequear valores de costos, eoq, rop, ss para todas las combinaciones de políticas y proveedores
 * Calcular nivel de servicio (sale con las ventas no realizadas)
+* Ver desvíos de error
 * Exportar datos simulados
 * Montecarlear
 
@@ -31,3 +28,4 @@ Previous steps:
   * hacer el calculo del stock de seguridad para p fijo.
   * arreglar todas las formulas (eoq;rop;etc) para que en vez de tomar el parámetro demandaMedia (que era un valor trivial) tome la media de nuestro pronóstico (que varía mes a mes)
   * Chequear la fórmula del stock de seguridad
+  * Agregar variación de proveedores con collections que contengan lt, precios
