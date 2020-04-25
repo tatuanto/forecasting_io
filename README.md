@@ -3,7 +3,11 @@
 actualizado wed 
 
 Problemas que tenemos:
+* demandaDia corre por cantidad de datos tiene 313 datos. Los dias domingo setea la demanda a cero pero no lo tiene en cuenta en la demandaDia entonces se corta antes el programa (a los 313 dias en vez de a los 365)
+
 * Tenemos la demanda calculada en anylogic con una normal que tiene como desvio el desvio del error (es uno solo para todo el período). Sería ideal sacar valores de desvío de errores mensuales en excel, después los pasamos a AL (es fácil)
+
+* El costo de almacenar esta mal calculado, ver como arreglamos
 
 
 
